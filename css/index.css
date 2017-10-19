@@ -1,0 +1,609 @@
+@import url(base.css);
+
+/*头部开始*/
+.header-top {
+	height: 40px;
+	width: 100%;
+	background: #444;
+	line-height: 40px;
+}
+.adv-wrapper-text {
+	text-align: right;
+	color: #a8a8aa;
+	margin: 0 auto;
+}
+/*头部结束*/
+
+/*导航栏开始*/
+.nav {
+	width: 100%;
+	height: 44px;
+	background: rgba(0,0,0,0.8);
+}
+.nav a {
+	color: #fff;
+	font-size: 14px;
+}
+.nav a:hover {
+	opacity: .65;
+}
+.nav-list ul {
+	width: 100%;
+	height: 100%;
+	/*两端对齐*/
+	text-align: justify;
+	line-height: 44px;
+	margin: 0 auto;
+}
+nav ul::after {
+	content: "";
+	display: inline-block;
+	height: 0;
+	width: 100%;
+}
+.nav-list ul li {
+	display: inline-block;
+}
+.min-list {
+	display: none;
+}
+/*导航栏结束*/
+
+/*轮播图开始*/
+.banner {
+	width: 100%;
+	position: relative;
+	/*background: #f9f0eb;*/
+}
+.banner >ul >li {
+	margin-bottom: 12px;
+}
+.banner_background {
+	width: 100%;
+	text-align: center;
+	color: #000;
+}
+.banner >ul >li:first-child {
+	background: #f9f0eb;
+}
+.banner >ul >li {
+	background: #fafafa;
+}
+.foucs {
+	display: block;
+	background-size: cover;
+	text-align: center;
+
+}
+.banner_background1 {
+	width: 100%;
+	text-align: center;
+	color: #000;
+}
+.foucs1 {
+	display: block;
+	background-size: cover;
+	text-align: center;
+	margin: 80px auto;
+}
+.banner_background2 {
+	width: 100%;
+	text-align: center;
+	color: #000;
+}
+.foucs2 {
+	display: block;
+	background-size: cover;
+	text-align: center;
+	margin: 50px auto;
+}
+/*轮播图开始*/
+
+
+/*图片列表开始*/
+.pic-list {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	width: 100%;
+}
+.pic-list li {
+	border: 2px solid #fff;
+	/*border-left: none;*/
+}
+.pic-list li a {
+	display: block;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	color: #111;
+}
+.pic-list .pic-list-link1 {
+	color: #000;
+}
+.pic-list li a p {
+	color: #333;
+}
+.pic-list-text {
+	padding-top: 30px;
+}
+
+.pic-list-text h3 {
+	font-weight: 400;
+}
+/*图片列表结束*/
+
+
+/*说明部分开始*/
+.wraper {
+	background: #f2f2f2;
+}
+.wraper-box {
+	margin: 0 auto;
+}
+.state {
+	border-bottom: 1px solid #d6d6d6;
+    color: #888;
+    padding: 17px 0 11px;
+}
+.state p {
+	font-size: 11px;
+    line-height: 22px;
+    font-weight: 400;
+}
+/*说明部分结束*/
+
+/*目录部分开始*/
+.directory {
+	display: flex;
+	justify-content: flex-start;
+	padding-top: 40px;
+}
+.directory a {
+	color: #555;
+}
+.directory a:hover {
+	text-decoration: underline;
+}
+.directory dl {
+	width: 196px;
+}
+dt {
+	font-weight: 600;
+}
+dt, dd{
+	margin-bottom: 6px;
+}
+
+
+.min-directory {
+	display: none;
+}
+.min-directory-list li {
+	height: 38px;
+	width: 100%;
+	line-height: 38px;
+	border-bottom: 1px solid #d6d6d6; 
+}
+.min-directory-list li a {
+	display: block;
+	width: 100%;
+	height: 100%;
+	color: #111;
+}
+/*目录部分结束*/
+
+/*底部版权区域开始*/
+footer {
+	padding: 34px 0 21px;
+	color: #888;
+}
+footer a:hover {
+	text-decoration: underline;
+}
+.foot-shop {
+    margin-bottom: 7px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid #d6d6d6;
+}
+.foot-shop a {
+	color: #0070c9;
+}
+.footer-legal-copyright {
+	margin-right: 30px;
+}
+.footer-legal a {
+	color: #555;
+}
+.footer-legal-links {
+	position: relative;
+	top: -3px;
+}
+.footer-legal-links a {
+	border-right: 1px solid #d6d6d6;
+    margin-right: 10px;
+    padding-right: 12px;
+    display: inline-block;
+    margin-top: 3px;
+}
+.copy {
+	padding-top: 8px;
+}
+.icon-zhongguo1 {
+	margin-right: 4px;
+	vertical-align: middle;
+	color: #de2910;
+}
+/*底部版权区域结束*/
+
+
+
+
+
+
+
+/*设备  屏幕                 阈值*/
+@media screen and (min-width: 1024px) {
+	.header-top main,
+	.nav-list ul {
+		width: 976px;
+	}
+
+	/*banner背景图开始*/
+	.banner >ul >li {
+		height: 580px;
+	}
+	.foucs {
+		background: url(../img/iphone_8_large.jpg) no-repeat center;
+		width:561px;
+		height: 395px;
+		margin: 19px auto;
+		/*background-size: cover;*/
+		/*height: 556px;*/
+	}
+	.foucs1 {
+		background: url(../img/iphone_x_large.jpg) no-repeat center;
+		width:909px;
+		height: 194px;
+	}
+	.foucs2 {
+		background: url(../img/watch_large.jpg) no-repeat center;
+		width:767px;
+		height: 341px;
+	}
+	/*banner背景图结束*/
+
+	.pic-list li {
+		width: 50%;
+		height: 598px;
+		border-bottom: 12px solid #fff;
+		border-left:12px solid #fff;
+		background: #fafafa;
+	}
+	.pic-list li:nth-child(odd) {
+		border-left: 6px solid #fff;
+	}
+	.pic-list li:nth-child(even) {
+		border-right: 6px solid #fff;
+	}
+	.pic-list-link1 {
+		background: url(../img/ios_large.jpg) no-repeat center;
+		/*background-size: cover;*/
+		/* width: 516px; */
+		height:369px ;
+		margin: 0 auto;
+		margin-top: 50px;
+	}
+	.pic-list-link2 {
+		background: url(../img/watchos_large.jpg) no-repeat center;
+		/*background-size: cover;*/
+		/* width:553px; */
+		height: 392px;
+		margin: 0 auto;
+		margin-top: 50px;
+	}
+	.pic-list-link3 {
+		background: url(../img/trade_up_large.jpg) no-repeat center;
+		/*background-size: cover;*/
+		margin: 0 auto;
+
+	}
+	.pic-list-link4 {
+		background: url(../img/macos_high_sierra_large.jpg) no-repeat center;
+		/*background-size: cover;*/
+		/* width: 499px; */
+		height: 292px;
+		margin: 0 auto;
+		margin-top: 50px;
+
+	}
+	.pic-list li:last-child {
+		border-right: none;
+	}
+
+	.wraper-box {
+		width: 976px;
+	}
+	
+	/*banner图文字大小开始*/
+	.banner_background h2 {
+		font-size: 56px;
+		padding-top: 56px;
+	}
+	.banner_background h3 {
+		font-size: 27px;
+	}
+	.banner_background1 h2 {
+		font-size: 56px;
+		padding-top: 56px;
+	}
+	.banner_background1 h3 {
+		font-size: 27px;
+	}
+	.banner_background_logo {
+		background: url("../img/loggo.png") no-repeat center;
+		width:187px;
+		height: 72px;
+		padding-top: 56px;
+		background-size: 182px 72px;
+		margin: 0 auto;
+	}
+	.banner_background2 h3 {
+		font-size: 27px;
+		margin-left: 20px;
+		margin-top: 20px;
+	}
+	.pic-list-text h2 {
+		font-size: 48px;
+	}
+	.pic-list-text h3 {
+		font-size: 24px;
+	}
+	/*banner图文字大小结束*/
+}
+
+
+@media screen and (max-width: 1024px) {
+	.header-top main,
+	.nav-list ul {
+		padding: 0 24px;
+	}
+	
+	.pic-list-text p {
+		display: none;
+	}
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+	/*banner背景图开始*/
+	.banner >ul >li {
+		height: 569px;
+	}
+	.foucs {
+		background: url(../img/iphone_8_medium.jpg) no-repeat center;
+		width:561px;
+		height: 388px;
+		margin: 37px auto ;
+	}
+	.foucs1 {
+		background: url(../img/iphone_x_medium.jpg) no-repeat center;
+		width:704px;
+		height: 148px;
+	}
+	.foucs2 {
+		 background: url(../img/watch_medium.jpg) no-repeat center;
+		 /*width:762px;*/
+		 height: 339px;
+	 }
+	/*banner背景图开始*/
+
+	.pic-list li {
+		width: 50%;
+		height: 508px;
+		background: #fafafa;
+	}
+	.pic-list li:nth-child(2n) {
+		border-right: none;
+	}
+	.pic-list-link1 {
+		background: url(../img/ios_medium.jpg) no-repeat center;
+		/*background-size: cover;*/
+		/* width: 362px; */
+		height:261px;
+		margin: 0 auto;
+		margin-top: 50px;
+	}
+	.pic-list-link2 {
+		background: url(../img/watchos_medium.jpg) no-repeat center;
+		/*background-size: cover;*/
+		/* width: 381px; */
+		height: 270px;
+		margin: 0 auto;
+		margin-top: 50px;
+	}
+	.pic-list-link3 {
+		background: url(../img/trade_up_medium.jpg) no-repeat center;
+		/*background-size: cover;*/
+		margin: 0 auto;
+	}
+	.pic-list-link4 {
+		background: url(../img/macos_high_sierra_medium.jpg) no-repeat center;
+		/*background-size: cover;*/
+		/* width: 332px; */
+		height: 194px;
+		margin: 0 auto;
+		margin-top: 50px;
+	}
+	.pic-list li:last-child {
+		border-right: none;
+	}
+
+	.wraper-box {
+		padding: 0 24px;
+	}
+	
+	/*banner图文字大小开始*/
+	.banner_background h2 {
+		font-size: 44px;
+		padding-top: 56px;
+	}
+	.banner_background h3 {
+		font-size: 22px;
+	}
+	.banner_background1 h2 {
+		font-size: 44px;
+		padding-top: 56px;
+	}
+	.banner_background1 h3 {
+		font-size: 22px;
+	}
+	.banner_background_logo {
+		background: url("../img/loggo.png") no-repeat center;
+		width:144px;
+		height: 56px;
+		padding-top: 56px;
+		background-size: 144px 56px;
+		margin: 0 auto;
+	}
+	.banner_background2 h3 {
+		font-size: 22px;
+		margin-left: 20px;
+		margin-top: 20px;
+	}
+	.pic-list-text h2 {
+		font-size: 40px;
+	}
+	.pic-list-text h3 {
+		font-size: 21px;
+	}
+	/*banner图文字大小结束*/
+
+}
+
+
+@media screen and (max-width: 768px) {
+	.max-nav {
+		display: none;
+	}
+	.min-list {
+		display: block;
+	}
+
+	/*banner背景图开始*/
+	.banner >ul >li {
+		height: 500px;
+	}
+	.foucs {
+		background: url(../img/iphone_8_small.jpg) no-repeat center;
+		/*background-size: cover;*/
+		width:267px;
+		height: 357px;
+		margin: 20px auto;
+	}
+	.foucs1 {
+		background: url(../img/iphone_x_small.jpg) no-repeat center;
+		width:167px;
+		height: 333px;
+		margin-top: 20px;
+	}
+	.foucs2 {
+		background: url(../img/watch_small.jpg) no-repeat center;
+		width:302px;
+		height: 338px;
+	}
+	/*banner背景图结束*/
+
+	.pic-list li {
+		width: 100%;
+		height: 500px;
+		border-left: none;
+		border-right: none;
+		background: #fafafa;
+		border-top:12px ;
+	}
+	.pic-list-link1 {
+		background: url(../img/ios_small.jpg) no-repeat center;
+		/*background-size: cover;*/
+		/* width: 420px; */
+		height: 310px;
+		margin: 0 auto;
+		margin-top: 50px;
+	}
+	.pic-list-link2 {
+		background: url(../img/watchos_small.jpg) no-repeat center;
+		/*background-size: cover;*/
+		/* width: 339px; */
+		height: 240px;
+		margin: 0 auto;
+		margin-top: 50px;
+	}
+	.pic-list-link3 {
+		background: url(../img/trade_up_small.jpg) no-repeat center;
+		/*background-size: cover;*/
+		margin: 0 auto;
+	}
+	.pic-list-link4 {
+		background: url(../img/macos_high_sierra_small.jpg) no-repeat center;
+		/*background-size: cover;*/
+		/* width: 348px; */
+		height: 203px;
+		margin: 0 auto;
+		margin-top: 50px;
+	}
+
+
+	.wraper-box {
+		padding: 0 24px;
+	}
+
+	/*banner图文字大小开始*/
+	.banner_background h2 {
+		font-size: 32px;
+		padding-top: 56px;
+	}
+	.banner_background h3 {
+		font-size: 19px;
+	}
+	.banner_background1 h2 {
+		font-size: 32px;
+		padding-top: 56px;
+	}
+	.banner_background1 h3 {
+		font-size: 19px;
+	}
+	.banner_background_logo {
+		background: url("../img/loggo.png") no-repeat center;
+		width:108px;
+		height: 46px;
+		padding-top: 56px;
+		background-size: 108px 46px;
+		margin: 0 auto;
+	}
+	.banner_background2 h3 {
+		font-size: 19px;
+		margin-left: 20px;
+		margin-top: 20px;
+	}
+	.pic-list-text h2 {
+		font-size: 32px;
+	}
+	.pic-list-text h3 {
+		font-size: 19px;
+	}
+	/*banner图文字大小结束*/
+	
+	
+	.directory {
+		display: none;
+	}
+	.min-directory {
+		display: block;
+	}
+	
+	.footer-legal div {
+		float: none;
+		line-height: 24px;
+	}
+
+}
